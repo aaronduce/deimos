@@ -14,4 +14,5 @@ using the remix app server:
 1. `npm run build`
 2. `cp .env.example .env`
 3. `npx prisma migrate deploy`
-4. `npm start`
+4. `npx prisma generate`
+5. `npm start`
