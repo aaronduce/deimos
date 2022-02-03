@@ -1,0 +1,34 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Subnet {
+  id String @id @default(uuid())
+  name String
+  v4partOne Int
+  v4partTwo Int
+  v4partThree Int
+  colour String
+  dhcp Boolean @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  addresses Address[]
+}
+
+model Address {
+  id String @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  address Int
+  detail String
+  subnetId String
+  subnet Subnet @relation(fields: [subnetId], references: [id], onDelete: Cascade)
+}
