@@ -12,4 +12,6 @@ built on remix with tailwind, db via prisma on sqlite.
 using the remix app server:
 
 1. `npm run build`
-2. `npm start`
+2. `cp .env.example .env`
+3. `npx prisma migrate deploy`
+4. `npm start`
