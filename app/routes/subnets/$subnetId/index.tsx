@@ -1,5 +1,5 @@
-import type { LoaderFunction } from "remix";
-import { Link, useLoaderData } from "remix";
+import { type LoaderFunction } from "@remix-run/node";
+import { Link, useLoaderData } from "@remix-run/react";
 import { db } from "~/utils/db.server";
 import type { Subnet, Address} from "@prisma/client";
 

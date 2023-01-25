@@ -1,5 +1,5 @@
-import type { ActionFunction, LoaderFunction } from "remix";
-import { Form, redirect, Link, useLoaderData } from "remix";
+import { type ActionFunction, type LoaderFunction, redirect } from "@remix-run/node";
+import { Form, Link, useLoaderData } from "@remix-run/react";
 import { db } from "~/utils/db.server";
 import { colours } from "~/utils/tailwind-colors.server";
 import type { Subnet, Address } from "@prisma/client";
