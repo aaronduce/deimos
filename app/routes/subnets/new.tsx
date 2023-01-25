@@ -1,5 +1,5 @@
-import type { ActionFunction } from "remix";
-import { Form, redirect, Link } from "remix";
+import { type ActionFunction, redirect } from "@remix-run/node";
+import { Form, Link } from "@remix-run/react";
 import { db } from "~/utils/db.server";
 import { colours } from "~/utils/tailwind-colors.server";
 

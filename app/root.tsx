@@ -1,4 +1,4 @@
-import { LiveReload, Outlet, Links, Link, NavLink } from "remix";
+import { Link, Links, LiveReload, NavLink, Outlet } from "@remix-run/react";
 import styles from "./tailwind.css";
 
 export function links() {

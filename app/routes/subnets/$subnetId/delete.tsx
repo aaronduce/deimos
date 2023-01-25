@@ -1,4 +1,4 @@
-import { ActionFunction, LoaderFunction } from "remix";
+import type { ActionFunction, LoaderFunction } from "remix";
 import { Link, useLoaderData, redirect } from "remix";
 import { db } from "~/utils/db.server";
 import type { Subnet, Address} from "@prisma/client";

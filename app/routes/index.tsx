@@ -1,5 +1,5 @@
-import type { LinksFunction, LoaderFunction, ActionFunction } from "remix";
-import { Link, Outlet, useLoaderData, Form, redirect } from "remix";
+import { type ActionFunction, type LinksFunction, type LoaderFunction, redirect } from "@remix-run/node";
+import { Form, Link, Outlet, useLoaderData } from "@remix-run/react";
 import { db } from "~/utils/db.server";
 
 export const action: ActionFunction = async ({
